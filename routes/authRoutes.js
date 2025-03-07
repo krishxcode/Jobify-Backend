@@ -7,5 +7,5 @@ const router = express.Router();
 router.post('/register', register); //http://localhost:8000/api/auth/register
 router.post('/login', login);//http://localhost:3000/api/auth/login
 router.get('/profile', protect, getProfile);//http://localhost:3000/api/auth/profile
-router.post('/logout', protect, logout);//http://localhost:3000/api/auth/logout
+router.post('/logout', logout);//http://localhost:3000/api/auth/logout
 export default router;
